@@ -1,0 +1,30 @@
+{
+  "name": "Message",
+  "type": "object",
+  "properties": {
+    "conversation_id": {
+      "type": "string",
+      "title": "Conversation ID",
+      "description": "Reference to the parent conversation"
+    },
+    "role": {
+      "type": "string",
+      "title": "Role",
+      "enum": [
+        "user",
+        "assistant"
+      ],
+      "default": "user"
+    },
+    "content": {
+      "type": "string",
+      "title": "Content",
+      "description": "The message text (markdown for assistant)"
+    }
+  },
+  "required": [
+    "conversation_id",
+    "role",
+    "content"
+  ]
+}

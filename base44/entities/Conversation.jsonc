@@ -1,0 +1,14 @@
+{
+  "name": "Conversation",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title",
+      "description": "A short title describing the conversation"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}
